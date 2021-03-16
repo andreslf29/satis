@@ -1,0 +1,68 @@
+
+
+.banner--satisfaccion {
+    position: relative;
+    background: url('img/satisfaccion.png') no-repeat 0 20%;
+    background-size: cover;
+    height: 100vh;
+    border-bottom-right-radius: 18em;
+    box-shadow: 10px 15px 100px -39px rgba(0, 0, 0, 0.75);
+}
+  
+.bolder {
+    font-family: 'Jost';
+    font-weight: 700;
+}
+  
+.banner__content--satisfaccion {
+    position: absolute;
+    bottom: 3em;
+    left: 10em;
+    display: flex;
+    flex-flow: column;
+  
+    h1 {
+      display: block;
+      font-family: 'Jost';
+      font-size: 6rem;
+      font-weight: 700;
+      opacity: 0.1;
+      line-height: 5rem;
+      word-spacing: 1.5rem;
+      padding-top: 10em;
+      padding-bottom: .2em;
+      text-transform: uppercase;
+      color: $color-blue;
+  
+      &:first-of-type {
+        padding: 0;
+      }
+    }
+  
+    p {
+      font-family: 'Roboto';
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: $color-blue;
+      text-align: justify;
+      width: 41%;
+    }
+  
+    ul {
+      font-family: 'Jost';
+      font-size: .5rem;
+      color: $color-blue;
+      font-weight: 700;
+      padding-top: 3em;
+      word-spacing: .3rem;
+    }
+}
+  
+.carousel {
+    width: 100%;
+}
+  
+.carousel-control-prev, .carousel-control-next {
+    display: none;
+}
+

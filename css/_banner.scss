@@ -1,0 +1,72 @@
+.banner {
+    background: url('../img/hero1.png') no-repeat center/cover, rgba(133, 133, 133, 0.9);
+    background-blend-mode: multiply;
+    height: 100vh;
+    border-bottom-right-radius: 15em;
+    box-shadow: 10px 15px 100px -39px rgba(0, 0, 0, 0.75);
+}
+
+.banner__content {
+    display: grid;
+    place-content: left;
+    padding-left: 5em;
+    padding-top: 3em;
+
+
+    @media only screen and (max-width: 600px){
+        padding-left: 1.5em;
+        padding-top: 1em;
+     }
+
+
+
+
+    h1 {
+        width: auto;
+        color: $color-white;
+        font-size: 5rem;
+        line-height: 4.2rem;
+        padding-top: 2em;
+        width: auto-fit;
+
+        @media only screen and (max-width: 800px){
+            padding-top: 1.5em;
+        }
+
+        @media only screen and (max-width: 680px){
+            padding-top: 4.5em;
+            line-height: 3.5rem;
+            font-size: 4rem;
+        }
+    }
+
+    .block__text {
+        display: block;
+        text-align: left;
+    }
+
+}
+
+.content__button{
+    height: 5vh;
+    margin-top: 1em;
+}
+
+
+.banner__button {
+    background: $color-red;
+    color: $color-white;
+    padding: .2em .5em;
+    text-transform: uppercase;
+    text-align: left;
+    font-family: 'Jost', sans-serif;
+    font-weight: 600;
+    letter-spacing: .25em;
+    
+    &:hover {
+        background-color: $color-red;
+        color: $color-blue;
+    }
+}
+
+
