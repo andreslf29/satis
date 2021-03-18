@@ -1,163 +1,183 @@
 .actualidad {
-    padding: 5em 8em;
+  padding: 5em 7em;
+  width: 100%;
+  margin-top: 6em;
+
+  @media only screen and (max-width: 750px) {
+    padding: 3em 1em 1em 1em;
+  }
+
+  h1 {
+    position: relative;
+    font-family: 'Jost', sans-serif;
+    font-size: 6rem;
+    font-weight: 700;
+    color: $color-red;
+    line-height: .5em;
+    text-transform: uppercase;
     width: 100%;
-    margin-top: 6em;
 
-    @media only screen and (max-width: 750px){
-        padding: 3em 2em;
-     }
-
-    h1 {
-        position: relative;
-      font-family: 'Jost';
-      font-size: 6rem;
-      font-weight: 700;
-      opacity: 0.1;
-      line-height: .5em;
-      text-transform: uppercase;
-      width: 100%;
-
-      @media only screen and (max-width: 680px){
-        font-size: 4rem;
-     }
-
-     @media only screen and (max-width: 500px){
-        font-size: 3rem;
-     }
-  
-      span {
-        display: block;
-        font-family: 'Roboto';
-        font-size: 1.2rem;
-        font-weight: 800;
-        letter-spacing: .2rem;
-        text-align: left;
-
-        @media only screen and (max-width: 680px){
-            font-size: 3rem;
-         }
-    
-         @media only screen and (max-width: 500px){
-            font-size: 1rem;
-            line-height: 2rem;
-            letter-spacing: .1rem;
-            padding-bottom: 1em;
-         }
-      }
+    @media only screen and (max-width: 680px) {
+      font-size: 4rem;
     }
-}
-  
-.header__encabezado {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-top: 5em;
 
-    @media only screen and (max-width: 400px){
-        padding-top: 2em
-     }
-
-    ul{
-        @media only screen and (max-width: 500px){
-            display: none
-         }
+    @media only screen and (max-width: 500px) {
+      font-size: 3rem;
     }
-  
-    ul li {
-      background-color: $color-red;
-      padding: 0em .2em;
-      font-family: 'Jost';
-      font-size: .8rem;
+
+    span {
+      display: block;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.2rem;
       font-weight: 800;
-      text-align: center;
-      line-height: 1rem;
-      color: #fff;
-  
-      &:first-of-type {
-        color: $color-red;
-        background-color: #fff;
-        font-size: 2rem;
-        padding-bottom: .3em;
-      }
-    }
-  
-    a {
-      color: $color-blue;
-      font-size: 2rem;
-      padding-left: 1em;
-      letter-spacing: .1rem;
-      line-height: .8em;
-      font-family: 'Jost';
-      font-weight: 700;
-      
-
-      @media only screen and (max-width: 400px){
-       padding-left: 0;
-       font-size: 1.5rem; 
-    }
-  
-      &:hover {
-        color: $color-red;
-      }
-  
-      span {
-        display: block;
-        font-size: 1.2rem;
-        font-family: 'Roboto';
-        color: #858585;
-        letter-spacing: .2rem;
-        font-family: 300;
-        text-align: left;
-
-      }
-    }
-  
-    p {
-      color: #858585;
-      line-height: 2em;
+      letter-spacing: .2rem;
       text-align: left;
-      word-spacing: .2rem;
+
+      @media only screen and (max-width: 680px) {
+        font-size: 1rem;
+      }
+
+      @media only screen and (max-width: 500px) {
+        font-size: 1rem;
+        letter-spacing: .1rem;
+        padding-top: .5em;
+        padding-bottom: .5em;
+      }
     }
+  }
+}
+
+.header__encabezado {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 2.5em;
+
+  @media only screen and (max-width: 400px) {
+    padding-top: 1em;
+  }
+
+  ul {
+    @media only screen and (max-width: 500px) {
+      display: none
+    }
+  }
+
+  ul li {
+    background-color: $color-red;
+    padding: 0em .2em;
+    font-family: 'Jost', sans-serif;
+    font-size: .8rem;
+    font-weight: 800;
+    text-align: center;
+    line-height: 1rem;
+    color: $color-white;
+
+
+    &:first-of-type {
+      color: $color-red;
+      background-color: $color-white;
+      font-size: 2rem;
+      padding-bottom: .3em;
+    }
+  }
+
+  a {
+    color: $color-blue;
+    font-size: 2rem;
+    padding-left: 1em;
+    letter-spacing: .1rem;
+    line-height: 1em;
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+
+
+    @media only screen and (max-width: 600px) {
+      padding-left: 0;
+      font-size: 1.5rem;
+    }
+
+    &:hover {
+      color: $color-red;
+    }
+
+    span {
+      display: block;
+      font-size: 1.2rem;
+      font-family: 'Roboto', sans-serif;
+      color: #858585;
+      letter-spacing: .2rem;
+      font-family: 300;
+      text-align: left;
+      padding-top: .3em;
+
+    }
+  }
+
+  p {
+    color: #858585;
+    line-height: 2em;
+    text-align: left;
+    word-spacing: .2rem;
+  }
+
 }
 
 
 .blog__img {
-    width: 100%;
-    padding: 2em 0;
-
-    @media only screen and (max-width: 400px){
-        padding:1em;
-     }
+  width: 100%;
+  padding: 1em 0;
 }
 
 
 .blog__accent {
-    font-weight: 700;
-    color: #858585;
-    line-height: 2.5em;
-    justify-content: left;
+  font-weight: 700;
+  color: #858585;
+  line-height: 2.5em;
+  justify-content: left;
 }
 
-
-  
 .footer__share {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 1em 0;
-    border-bottom: 3px solid #858585;
-  
-    p {
-      text-transform: uppercase;
-      color: $color-blue;
-      letter-spacing: .2rem;
-      font-weight: 600;
-      font-family: 'Roboto';
-      text-align: justify;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1em 0;
+  border-bottom: 3px solid #858585;
 
-      @media only screen and (max-width: 750px){
-        display: none;
-     }
+  p {
+    text-transform: uppercase;
+    color: $color-blue;
+    letter-spacing: .2rem;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+
+    @media only screen and (max-width: 750px) {
+      display: none;
     }
+  }
 }
-  
+
+
+.footer__share {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1em 0;
+  border-bottom: 3px solid #858585;
+
+  p {
+    text-transform: uppercase;
+    color: $color-red;
+    letter-spacing: .2rem;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+  }
+}
+
+.footer__iconos--blog {
+  a {
+    color: $color-red;
+  }
+}

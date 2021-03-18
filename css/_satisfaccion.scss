@@ -1,68 +1,85 @@
-
+.satis {
+  background-color: $color-blue;
+}
 
 .banner--satisfaccion {
-    position: relative;
-    background: url('img/satisfaccion.png') no-repeat 0 20%;
-    background-size: cover;
-    height: 100vh;
-    border-bottom-right-radius: 18em;
-    box-shadow: 10px 15px 100px -39px rgba(0, 0, 0, 0.75);
-}
-  
-.bolder {
-    font-family: 'Jost';
-    font-weight: 700;
-}
-  
-.banner__content--satisfaccion {
-    position: absolute;
-    bottom: 3em;
-    left: 10em;
-    display: flex;
-    flex-flow: column;
-  
-    h1 {
-      display: block;
-      font-family: 'Jost';
-      font-size: 6rem;
-      font-weight: 700;
-      opacity: 0.1;
-      line-height: 5rem;
-      word-spacing: 1.5rem;
-      padding-top: 10em;
-      padding-bottom: .2em;
-      text-transform: uppercase;
-      color: $color-blue;
-  
-      &:first-of-type {
-        padding: 0;
-      }
-    }
-  
-    p {
-      font-family: 'Roboto';
-      font-size: 1rem;
-      line-height: 1.5rem;
-      color: $color-blue;
-      text-align: justify;
-      width: 41%;
-    }
-  
-    ul {
-      font-family: 'Jost';
-      font-size: .5rem;
-      color: $color-blue;
-      font-weight: 700;
-      padding-top: 3em;
-      word-spacing: .3rem;
-    }
-}
-  
-.carousel {
-    width: 100%;
-}
-  
-.carousel-control-prev, .carousel-control-next {
-    display: none;
+  background: url('../img/satisfaccion.png') no-repeat center/cover, rgba(133, 133, 133, 0.5);
+  background-blend-mode: multiply;
+
+  @media only screen and (max-width: 600px) {
+    border-bottom-right-radius: 12em;
+  }
+
+
 }
 
+
+.banner__content--satisfaccion {
+
+  h1 {
+    color: $color-red;
+    font-size: 5.5rem;
+    line-height: 0.8em;
+
+    @media only screen and (max-width: 700px) {
+      border-bottom-right-radius: 12em;
+      padding-top: 2.3em;
+      font-size: 4.3rem;
+    }
+
+
+
+    span {
+      display: block;
+      text-align: left;
+      padding-bottom: .3em;
+    }
+  }
+
+  ul {
+    font-family: 'Jost', sans-serif;
+    font-size: 1rem;
+    color: $color-blue;
+    font-weight: 600;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    word-spacing: .2rem;
+    text-transform: uppercase;
+
+
+    li {
+      padding-top: .5em;
+      padding-bottom: .5em;
+    }
+  }
+
+
+
+}
+
+.texto {
+  padding: 4em;
+
+  @media only screen and (max-width: 400px) {
+    padding: 2em;
+  }
+
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: $color-white;
+    text-align: left;
+
+    @media only screen and (max-width: 600px) {
+      padding: 1em;
+    }
+
+  }
+}
+
+.bolder {
+  font-weight: 600;
+  display: inline;
+  color: $color-red;
+}

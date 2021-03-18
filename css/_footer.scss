@@ -1,7 +1,9 @@
 $color-blue: #002C70;
 $color-red: #E6402F;
+
 .footer {
   width: 100%;
+  position: relative;
 }
 
 .row {
@@ -21,7 +23,8 @@ $color-red: #E6402F;
     font-size: 5rem;
     font-weight: 900;
     opacity: .05;
-    @media only screen and (max-width: 900px){
+
+    @media only screen and (max-width: 900px) {
       display: none;
     }
   }
@@ -30,9 +33,9 @@ $color-red: #E6402F;
     background: none;
     color: $color-blue;
 
-    @media only screen and (max-width: 1020px){
+    @media only screen and (max-width: 1020px) {
       display: flex;
-        flex-direction: column;
+      flex-direction: column;
     }
 
   }
@@ -41,19 +44,19 @@ $color-red: #E6402F;
     background: $color-blue;
     color: white;
     font-size: .8rem;
-    
 
-    @media only screen and (max-width: 768px){
+
+    @media only screen and (max-width: 768px) {
       text-align: center;
       display: flex;
-        flex-direction: column-reverse;
+      flex-direction: column-reverse;
     }
   }
 
   ul {
     text-transform: uppercase;
 
-    @media only screen and (max-width: 768px){
+    @media only screen and (max-width: 768px) {
       display: none;
     }
   }
@@ -76,7 +79,7 @@ span {
     font-weight: 500;
     padding-top: .5em;
 
-    @media only screen and (max-width: 1020px){
+    @media only screen and (max-width: 1020px) {
       text-align: center;
       padding: 1em .3em;
       display: flex;
@@ -86,20 +89,20 @@ span {
   &.bold {
     font-weight: 700;
 
-    @media only screen and (max-width: 1020px){
+    @media only screen and (max-width: 1020px) {
       text-align: center;
       display: flex;
-        justify-content: center;
+      justify-content: center;
     }
   }
 
   &.block-title {
     display: block;
     padding-bottom: .2em;
-    
+
   }
 
-  @media only screen and (max-width: 1020px){
+  @media only screen and (max-width: 1020px) {
     text-align: center;
     display: flex;
     justify-content: center;
@@ -116,12 +119,12 @@ span {
   justify-content: space-between;
   color: $color-blue;
 
-  @media only screen and (max-width: 1080px){
+  @media only screen and (max-width: 1080px) {
     display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      padding-bottom: 1em;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 1em;
   }
 }
 

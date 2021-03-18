@@ -2,210 +2,221 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 10em 12em 5em 12em;
+    padding: 8.5em 5em 1em 5em;
 
-
-    @media only screen and (max-width: 1000px){
+    @media only screen and (max-width: 800px) {
         flex-direction: column;
         padding: 8em 2em 1em 2em;
     }
 }
-  
+
 .contact__content {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: center;
 
-    @media only screen and (max-width: 900px){
-        align-items: center;
-    }
-  
     h1 {
-      font-family: 'Jost';
-      font-size: 6rem;
-      font-weight: 700;
-      opacity: 0.1;
-      line-height: .8em;
-      letter-spacing: .2rem;
-      text-transform: uppercase;
+        font-family: 'Jost', sans-serif;
+        font-size: 6rem;
+        font-weight: 700;
+        color: $color-red;
+        line-height: .8em;
+        letter-spacing: .2rem;
+        text-transform: uppercase;
 
-      @media only screen and (max-width: 900px){
-        letter-spacing: .1rem;
-    }
+        @media only screen and (max-width: 900px) {
+            letter-spacing: .1rem;
+        }
     }
 
-    
+
 }
-  
+
 .title__block {
     display: block;
     font-size: 6rem;
 }
-  
+
 .contact__content p {
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     font-size: .9rem;
     font-weight: 700;
     color: $color-blue;
+    text-align: center;
     word-spacing: .5rem;
     text-transform: uppercase;
-    text-align: center;
     padding-bottom: 2em;
     padding-top: .5em;
     letter-spacing: .1rem;
+    width: 100%;
 
-    @media only screen and (max-width: 800px){
-        text-align: center;
+    @media only screen and (max-width: 400px) {
+        text-align: left;
         padding-top: 1em;
     }
 }
-  
+
 .whatsapp {
     font-size: 1.2rem;
-    font-family: 'Roboto';
-    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    color: $color-white;
     width: 7.6em;
     text-align: center;
     padding: .2em .5em;
     border-radius: 2em;
     background: linear-gradient(90deg, #00bb2d 35%, #009624 100%);
+
+    &:hover {
+        background: $color-red;
+    }
 }
-  
+
 .text__red {
     color: $color-red;
     text-transform: uppercase;
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     font-weight: 600;
     font-size: 1.2rem;
     letter-spacing: .1rem;
-
-    
+    display: flex;
+    align-items: center;
+    height: 1.5em;
 }
-  
+
 .contact__content ul {
     padding-top: 1.5em;
-  
-   li {
-      padding-bottom: 1.5em;
+
+    li {
+        padding-bottom: 1.5em;
     }
 }
-  
+
 .local {
     display: block;
-    padding-left: 2em;
     color: $color-blue;
     font-weight: 600;
-    font-size: .8rem;
+    font-size: 1rem;
     word-spacing: .2rem;
     letter-spacing: .1rem;
+    padding-top: .1em;
 }
-  
-  /*form*/
-  
+
+/*form*/
+
 .form__section {
     display: flex;
     flex-flow: column;
-    justify-content: flex-start;
-    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 2em;
     background: $color-blue;
     background: linear-gradient(0deg, rgba(13, 51, 95, 0.2413340336) 0%, rgba(255, 255, 255, 1) 100%);
+
+
+    @media only screen and (max-width: 1000px) {
+        padding: 1em 1em;
+    }
 }
-  
+
 form label {
     display: none;
 }
-  
+
 .form {
     display: flex;
     display: inline-block;
 }
-  
+
 .form-text {
     display: flex;
     display: inline-block;
     justify-content: center;
     align-content: space-around;
 }
-  
+
 .form h2 {
     color: $color-blue;
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
     font-weight: 600;
     text-align: center;
     line-height: 1em;
     letter-spacing: .1rem;
     font-size: 1.3rem;
 }
-  
+
 .form__question {
     display: block;
 }
-  
+
 .form {
     h1 {
-      color: $color-blue;
-      font-family: 'Jost';
-      font-weight: 900;
-      text-align: center;
-      line-height: 1em;
-      letter-spacing: .1rem;
-      font-size: 1.8rem;
-      padding: .6em 0;
+        color: $color-blue;
+        font-family: 'Jost', sans-serif;
+        font-weight: 900;
+        text-align: center;
+        line-height: 1em;
+        letter-spacing: .1rem;
+        font-size: 1.8rem;
+        padding: .6em 0;
     }
-  
+
     p {
-      font-weight: 500;
-      text-align: center;
-      font-size: 1.1rem;
-      color: $color-blue;
-      letter-spacing: .2rem;
-      padding-bottom: .8em;
+        font-weight: 500;
+        text-align: center;
+        font-size: 1rem;
+        color: $color-blue;
+        letter-spacing: .2rem;
+        padding-bottom: .8em;
     }
 }
-  
+
 main form {
     display: flex;
     flex-flow: column;
     align-items: center;
 }
-  
+
 label:last-of-type {
     margin-bottom: 0em;
 }
-  
+
 input {
-    &[type=text], &[type=email], &[type=tel] {
-      border: none;
-      width: 80%;
-      font-size: .8rem;
-      align-items: center;
-      margin-bottom: .5em;
-      padding: .2em;
+
+    &[type=text],
+    &[type=email],
+    &[type=tel] {
+        border: none;
+        width: 92%;
+        font-size: .8rem;
+        align-items: center;
+        margin-bottom: .5em;
+        padding: .5em .5em;
     }
 }
-  
+
 textarea {
     border: none;
-    width: 80%;
+    width: 92%;
     font-size: .8rem;
     align-items: center;
     margin-bottom: .5em;
-    padding: .2em;
+    padding: .5em .5em;
+    resize: none;
 }
-  
+
 input[type=checkbox] {
     font-size: .1rem;
+    padding: .5em .5em;
 }
-  
+
 label:last-of-type {
     font-size: .8rem;
     display: block;
-    text-align: left;
     padding-bottom: 1em;
 }
-  
+
 input[type=submit] {
-    width: 20%;
+    width: auto-fit;
     padding: .2em .5em;
     font-weight: 600;
     letter-spacing: .2em;
@@ -216,17 +227,12 @@ input[type=submit] {
     align-self: flex-end;
     margin-right: 2.5em;
 
-    @media only screen and (max-width: 1020px){
+    @media only screen and (max-width: 1020px) {
         width: auto;
         margin-right: 1em;
     }
-  
-    &:hover {
-      padding: .3em .6em;
 
-      
-    @media only screen and (max-width: 1020px){
-        padding: 0;
-    }
+    &:hover {
+        color: $color-blue;
     }
 }
